@@ -18,7 +18,7 @@ If you feel this book is for you, get your copy today!
 https://www.packtpub.com/
 
 ### Instructions and Navigations
-Code explained in the book is organized into chapters. For example, chapter-1_Getting_Started_With_Typescript_4.
+Code explained in the book is organized into chapters. For example, *chapter-1_Getting_Started_With_Typescript_4*.
 
 We designed this book for readers with basic TypeScript or Javascript experience but no prior knowledge of Design Patterns
 Some familiarity with web development is a recommended to understanding the concepts in the book easily.
@@ -38,7 +38,7 @@ With the following software and hardware list you can run all code files present
 * Mastering Typescript [[Packt]](https://www.packtpub.com/product/mastering-typescript-3-third-edition/9781789536706 )
 
 ## Get to Know the Author
-Theo Despoudis lives in Limerick, Ireland, where he works as a Software Engineer for WP Engine and as a part-time tech practitioner for fixate.io. He is the co-author of The React Workshop and Advanced Go Programming in 7 Days, Dzone Core Member, and maintains some open source projects on GitHub. Theo is available for conference talks, independent consulting, and corporate training services opportunities.
+**Theo Despoudis** lives in Limerick, Ireland, where he works as a Software Engineer for WP Engine and as a part-time tech practitioner for fixate.io. He is the co-author of The React Workshop and Advanced Go Programming in 7 Days, Dzone Core Member, and maintains some open source projects on GitHub. Theo is available for conference talks, independent consulting, and corporate training services opportunities.
 
 ## Other books by the authors
 [The React Workshop](https://www.packtpub.com/product/the-react-workshop/9781838645564 )
