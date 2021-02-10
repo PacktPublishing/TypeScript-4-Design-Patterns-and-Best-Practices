@@ -17,6 +17,27 @@
       "name": "Attach by Process ID",
       "processId": "${command:PickProcess}",
       "protocol": "inspector"
-    }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Code from Chapter 1",
+      "program": "${workspaceFolder}/chapters/chapter-1_Getting_Started_With_Typescript_4/${input:programNameChapter1}",
+      "preLaunchTask": "tsc: build - chapters/tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+    },
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "programNameChapter1",
+      "description": "What program you want to launch?",
+      "options": [
+        "computeFrequency.ts",
+        "removeDuplicateVars.ts",
+        "refactoring.ts"
+      ],
+      "default": "computeFrequency.ts"
+    },
   ]
 }

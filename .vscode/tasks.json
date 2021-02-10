@@ -10,6 +10,15 @@
         "kind": "build",
         "isDefault": true
       }
-    }
-  ]
+    },
+    {
+      "type": "typescript",
+      "tsconfig": "chapters/tsconfig.json",
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "group": "build",
+      "label": "tsc: build - chapters/tsconfig.json"
+    },
+  ],
 }
