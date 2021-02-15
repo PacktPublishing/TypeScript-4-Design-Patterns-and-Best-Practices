@@ -35,7 +35,8 @@
       "options": [
         "computeFrequency.ts",
         "removeDuplicateVars.ts",
-        "refactoring.ts"
+        "refactoring.ts",
+        "frozenDecorator.ts"
       ],
       "default": "computeFrequency.ts"
     },
