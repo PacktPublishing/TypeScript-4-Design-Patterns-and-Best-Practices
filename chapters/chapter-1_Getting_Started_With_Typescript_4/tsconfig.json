@@ -1,9 +1,9 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     // compiler options
     "composite": true,
     "allowJs": true,
-    "noImplicitAny": true
+    "noImplicitAny": false
   }
 }
