@@ -4,6 +4,6 @@
     // compiler options
     "composite": true,
     "allowJs": true,
-    "noImplicitAny": true
+    "noImplicitAny": false
   }
 }

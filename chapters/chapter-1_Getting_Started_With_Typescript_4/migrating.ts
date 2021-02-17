@@ -1,4 +1,5 @@
 import { triggerNotification } from "./duckTyping";
+import { isObject } from "./jsUtils";
 
 triggerNotification(
   { send: (msg) => console.log(msg) },
