@@ -12,11 +12,6 @@ const point3: NamedPoint2d = ["Point: (1, 2)", 1, 2];
 type Point2dL = [x: number, y: number];
 type Point3dL = [x: number, y: number, z: number];
 
-type Direction = `${"Down" | "Left" | "Right" | "Up"}${"" | "Big"}`;
-type Position = "Top" | "Bottom";
-type Entry = "In" | "Out";
-type FadeClassNames = `fade${Entry}${"" | Direction | Position}`;
-
 type Suit = `${"Spade" | "Heart" | "Diamond" | "Club"}`;
 type Rank = `${
   | "2"
