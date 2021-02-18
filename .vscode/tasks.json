@@ -13,12 +13,21 @@
     },
     {
       "type": "typescript",
-      "tsconfig": "chapters/tsconfig.json",
+      "tsconfig": "chapters/chapter-1_Getting_Started_With_Typescript_4/tsconfig.json",
       "problemMatcher": [
         "$tsc"
       ],
       "group": "build",
-      "label": "tsc: build - chapters/tsconfig.json"
+      "label": "tsc: build Chapter 1"
+    },
+    {
+      "type": "typescript",
+      "tsconfig": "chapters/chapter-2_Core_Principes_and_use_cases/tsconfig.json",
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "group": "build",
+      "label": "tsc: build Chapter 2"
     },
   ],
 }

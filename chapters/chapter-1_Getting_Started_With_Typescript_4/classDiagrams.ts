@@ -11,7 +11,7 @@ class Product implements Identifiable<string> {
   }
 }
 
-abstract class BaseApiClient {}
+abstract class BaseAPIClient {}
 
 // Association
 class Blog implements Identifiable<string> {
