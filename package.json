@@ -4,23 +4,37 @@
   "description": "TypeScript 4 Design Patterns and Best Practices Book, Published by Packt",
   "main": "index.js",
   "dependencies": {
+    "fp-ts": "^2.9.5",
     "inversify": "^5.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.25",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
     "@types/reflect-metadata": "^0.1.0",
+    "cross-env": "^7.0.3",
     "jest": "^26.6.3",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.5.1",
+    "ts-loader": "^8.0.17",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3",
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
     "build": "npx tsc --build chapters",
     "clean": "npx rimraf dist",
+    "build:webpack:chapter2": "webpack -c chapters/chapter-2_Core_Principles_and_use_cases/webpack/webpack.config.js",
+    "serve:webpack:chapter2": "webpack serve --mode development -c chapters/chapter-2_Core_Principles_and_use_cases/webpack/webpack.config.js",
+    "serve:react:chapter2": "webpack serve --mode development -c chapters/chapter-2_Core_Principles_and_use_cases/react/webpack.config.js",
     "rebuild": "npm run clean && npm run build",
     "ts": "ts-node",
     "test": "jest"
