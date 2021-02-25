@@ -46,5 +46,11 @@
       "group": "build",
       "label": "tsc: build Chapter 2"
     },
+    {
+      "type": "shell",
+      "command": "deno",
+      "args": [ "run", "--allow-net=0.0.0.0:8000", "chapters/chapter-2_Core_Principles_and_use_cases/deno/index.ts"],
+      "label": "P"
+    },
   ],
 }
