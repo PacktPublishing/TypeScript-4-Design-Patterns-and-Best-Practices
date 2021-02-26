@@ -1,9 +1,5 @@
 import "reflect-metadata";
-import {
-  interfaces,
-  InversifyExpressServer,
-  TYPE,
-} from "inversify-express-utils";
+import { interfaces, InversifyExpressServer } from "inversify-express-utils";
 
 import app from "./app";
 import container from "./container";

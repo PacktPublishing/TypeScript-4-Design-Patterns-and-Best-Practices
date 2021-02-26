@@ -12,14 +12,6 @@
       }
     },
     {
-      "type": "npm",
-      "script": "build",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
       "type": "typescript",
       "tsconfig": "chapters/chapter-1_Getting_Started_With_Typescript_4/tsconfig.json",
       "problemMatcher": [
@@ -50,7 +42,7 @@
       "type": "shell",
       "command": "deno",
       "args": [ "run", "--allow-net=0.0.0.0:8000", "chapters/chapter-2_Core_Principles_and_use_cases/deno/index.ts"],
-      "label": "P"
+      "label": "tsc: run Chapter 2 Deno Example"
     },
   ],
 }
