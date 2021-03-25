@@ -21,7 +21,7 @@ const container = new Container();
 // set up bindings
 container
   .bind<UsersApiService>(TYPES.UsersApiService)
-  .to(new UsersApiServiceImpl())
+  .to(UsersApiServiceImpl)
   .inSingletonScope();
 
 container
