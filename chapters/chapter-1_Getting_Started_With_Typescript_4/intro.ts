@@ -23,7 +23,7 @@ const enum Bool {
 
 let truth: Bool = Bool.True;
 
-const arr: number[] = [1, 2, 3];
+const arr: number[] = [1, 2, 3]; // array of numbers of any size
 const tup: [number] = [1];
 
 class User {
