@@ -45,19 +45,22 @@ const item = new TodoItem({ description: "Some description" });
 console.debug(item.description); // prints "Some description"
 console.debug(item.title); // prints "Some description"
 
-
 type OriginalTodoItemProps = Required<Partial<TodoItemProps>>; // type is same as TodoItemProps
 
-type ButtonProps = Pick<HTMLAttributes<HTMLButtonElement>, 'onClick' | 'onSubmit' | 'className' | 'onFocus'>;
+type ButtonProps = Pick<
+  HTMLAttributes<HTMLButtonElement>,
+  "onClick" | "onSubmit" | "className" | "onFocus"
+>;
 
 type OriginalThemProps = {
-    colors: string[],
-    elevations: string[],
-    margins: string[],
-    defaultTypography: string;
-}
-type CustomThemeProps {
-    colors: Set<string>;
-}
-type ThemeProps = Omit<OriginalThemProps, 'colors'> & { colors?: CustomThemeProps }
-
+  colors: string[];
+  elevations: string[];
+  margins: string[];
+  defaultTypography: string;
+};
+type CustomThemeProps = {
+  colors: Set<string>;
+};
+type ThemeProps = Omit<OriginalThemProps, "colors"> & {
+  colors?: CustomThemeProps;
+};

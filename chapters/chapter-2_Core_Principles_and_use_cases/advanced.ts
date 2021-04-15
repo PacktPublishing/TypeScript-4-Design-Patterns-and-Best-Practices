@@ -27,54 +27,56 @@ type Point3d = NominalTyped<Point2d & { z: number }, Point2d>;
 
 type Point2d = { x: number; y: number };
 
-function distance(first: Point2d, second: Point2d>) {
+function distance(first: Point2d, second: Point2d) {
   return Math.sqrt(
     Math.pow(first.x - second.x, 2) + Math.pow(first.y - second.y, 2)
   );
 }
 
+distance({ x: 1, y: 2 }, { x: 3, y: 4 });
 
-distance({x: 1, y: 2}, {x: 3, y: 4})
-
-function distance(first: NominalTyped<Point2d, "Point2d">, second: NominalTyped<Point2d, "Point2d">) {
+function distance(
+  first: NominalTyped<Point2d, "Point2d">,
+  second: NominalTyped<Point2d, "Point2d">
+) {
   return Math.sqrt(
     Math.pow(first.x - second.x, 2) + Math.pow(first.y - second.y, 2)
   );
 }
-
 
 class User {
-    readonly private static __type: unique symbol = Symbol();
-    name: string;
-    constructor(name: string) {
-        this.name = name;
-    }
+  private static readonly __type: unique symbol = Symbol();
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
 }
-type Account {
-    name: string
-}
+type Account = {
+  name: string;
+};
 function printAccountName(o: User) {
-    console.log(o.name);
+  console.log(o.name);
 }
-printAccountName(new User("Theo"))
+printAccountName(new User("Theo"));
 // printAccountName({name: "Alex"}) // Fail to typecheck
 
 type PPSNumber = {
   number: string;
 };
-type NameOrPPSNumber<T extends string | number> =
-    T extends number ? PPSNumber : string;
+type NameOrPPSNumber<T extends string | number> = T extends number
+  ? PPSNumber
+  : string;
 
 const loginInfo: NameOrPPSNumber<1> = {
-  number: "123"
+  number: "123",
 };
 
 interface Box<T> {
-  value: T
+  value: T;
 }
 
-type UnpackBox<A> = A extends Box<infer E> ? E : A
+type UnpackBox<A> = A extends Box<infer E> ? E : A;
 
-type intStash = UnpackBox<{value: 10}>
-type stringStash = UnpackBox<{value: "123"}>
-type booleanStash = UnpackBox<true>
+type intStash = UnpackBox<{ value: 10 }>;
+type stringStash = UnpackBox<{ value: "123" }>;
+type booleanStash = UnpackBox<true>;

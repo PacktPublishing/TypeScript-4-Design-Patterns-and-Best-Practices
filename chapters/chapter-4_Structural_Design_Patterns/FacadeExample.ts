@@ -13,7 +13,6 @@ class UploadService {
     return this.client.upload(url, blob);
   }
 }
-
 class DocumentUploadFacade {
   constructor(
     private documentService: DocumentService,

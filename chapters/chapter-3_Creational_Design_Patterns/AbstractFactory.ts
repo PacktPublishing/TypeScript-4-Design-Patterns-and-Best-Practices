@@ -60,12 +60,12 @@ type CircleProps = {
   cy: number;
   radius: number;
 };
-type RectangleProps {
-    x1: number;
-    y1: number;
-    width: number;
-    height: number;
-}
+type RectangleProps = {
+  x1: number;
+  y1: number;
+  width: number;
+  height: number;
+};
 
 interface BrowserGraphicsFactory {
   drawCircle(props: CircleProps): Circle;
