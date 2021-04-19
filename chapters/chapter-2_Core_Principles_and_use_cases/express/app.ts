@@ -13,6 +13,4 @@ app.use(
 app.use(bodyParser.json());
 app.use(logger);
 
-app.set("port", process.env.PORT || 3000);
-
 export default app;

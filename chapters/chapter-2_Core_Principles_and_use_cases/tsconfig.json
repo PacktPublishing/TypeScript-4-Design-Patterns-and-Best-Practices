@@ -2,9 +2,9 @@
     "extends": "../tsconfig.json",
     "compilerOptions": {
       // compiler options
-      "composite": true,
+      "composite": false,
       "allowJs": true,
       "noImplicitAny": false,
       "target": "ES2015"
-    }
+    },
   }

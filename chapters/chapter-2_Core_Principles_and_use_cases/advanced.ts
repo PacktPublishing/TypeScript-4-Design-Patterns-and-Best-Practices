@@ -25,17 +25,14 @@ type NominalTyped<Type, Brand> = Type & { __type: Brand };
 
 type Point3d = NominalTyped<Point2d & { z: number }, Point2d>;
 
-type Point2d = { x: number; y: number };
-
-function distance(first: Point2d, second: Point2d) {
+function distance1(first: Point2d, second: Point2d) {
   return Math.sqrt(
     Math.pow(first.x - second.x, 2) + Math.pow(first.y - second.y, 2)
   );
 }
+distance1({ x: 1, y: 2 }, { x: 3, y: 4 });
 
-distance({ x: 1, y: 2 }, { x: 3, y: 4 });
-
-function distance(
+function distance2(
   first: NominalTyped<Point2d, "Point2d">,
   second: NominalTyped<Point2d, "Point2d">
 ) {
