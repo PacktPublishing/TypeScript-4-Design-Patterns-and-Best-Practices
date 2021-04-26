@@ -63,29 +63,25 @@ console.log(sc.items);
 ];
 
 // // Implementor type
-// interface StorageItem {
-//   id: string;
-//   value: string;
-// }
-// type ExtendedStorageItem = StorageItem & {
-//   createdAt: Date;
-// };
-// // Abstraction type
-// interface List<T> {
-//   push(item: T);
-//   pop(): T;
-//   shift(): T;
-//   unshift(): T;
-// }
-// interface Node {
-//   value: number;
-//   next: Node;
-// }
-// class ArrayList<T> implements List<T> {
-//   constructor(private items: StorageItem) {}
-//   // implements methods of List
-// }
-// class LinkedList<T> implements List<T> {
-//   constructor(private root: Node, private items: StorageItem) {}
-//   // implements methods of List
-// }
+interface StoreAPI<T> {
+  store(item: T);
+}
+type PersistedStorageItem = StorageItem & {
+  createdAt: Date;
+  persist(): void;
+};
+// Abstraction type
+interface List<T> {
+  push(item: T);
+}
+class ArrayList<T> implements List<T> {
+  constructor(private items: T[], private storeAPI: StoreAPI<T>) {}
+  push(item: T): void {
+    this.storeAPI.store(item);
+  }
+  // implements methods of List
+}
+class LinkedList<T> implements List<T> {
+  constructor(private root: Node, private items: T[]) {}
+  // implements methods of List
+}
