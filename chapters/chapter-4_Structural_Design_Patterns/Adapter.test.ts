@@ -1,18 +1,18 @@
 import { ActionSender, EventAdapter } from "./Adapter";
 import { mocked } from "ts-jest/utils";
-import { EventCreator } from './EventCreator';
+import { EventCreator } from "./EventCreator";
 
-jest.mock('./EventAdapter', () => {
+jest.mock("./EventCreator", () => {
   return {
     EventCreator: jest.fn().mockImplementation(() => {
       return {
         sendEvent: jest.fn(),
       };
-    })
+    }),
   };
 });
 
-describe('EventCreator', () => {
+describe("EventCreator", () => {
   const mockedEventCreator = mocked(EventCreator, true);
   beforeEach(() => {
     // Clears the record of calls to the mock constructor function and its methods
@@ -25,4 +25,4 @@ describe('EventCreator', () => {
     ad.sendAction("action");
     expect(mockedEventCreator).toHaveBeenCalledTimes(1);
   });
-})
+});
