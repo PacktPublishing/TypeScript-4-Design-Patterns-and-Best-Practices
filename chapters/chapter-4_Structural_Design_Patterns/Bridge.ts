@@ -62,14 +62,10 @@ console.log(sc.items);
   { id: "1", value: "abc" },
 ];
 
-// // Implementor type
+// Implementor type
 interface StoreAPI<T> {
   store(item: T);
 }
-type PersistedStorageItem = StorageItem & {
-  createdAt: Date;
-  persist(): void;
-};
 // Abstraction type
 interface List<T> {
   push(item: T);
