@@ -33,3 +33,24 @@ const iterator = aggregate.getListIterator();
 while (iterator.hasNext()) {
   console.log(iterator.next()); // prints 15, 5, 10
 }
+class OnlyA implements Iterable<string> {
+  constructor(private limit: number = 3) {}
+
+  [Symbol.iterator]() {
+    let limit = this.limit;
+
+    return {
+      next(): IteratorResult<string> {
+        return {
+          done: limit-- === 0,
+          value: "A",
+        };
+      },
+    };
+  }
+}
+const a = new OnlyA();
+
+for (let i of a) {
+  console.log(i);
+}
