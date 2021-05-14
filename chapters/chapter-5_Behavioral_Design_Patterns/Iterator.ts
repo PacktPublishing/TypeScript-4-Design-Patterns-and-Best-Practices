@@ -50,7 +50,6 @@ class OnlyA implements Iterable<string> {
   }
 }
 const a = new OnlyA();
-
 for (let i of a) {
   console.log(i);
 }
