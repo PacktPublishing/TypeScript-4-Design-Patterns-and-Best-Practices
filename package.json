@@ -6,15 +6,18 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "fp-ts": "^2.9.5",
+    "immutable": "^4.0.0-rc.12",
     "inversify": "^5.0.5",
     "inversify-express-utils": "^6.3.2",
     "morgan": "^1.10.0",
+    "ramda": "^0.27.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
+    "@types/immutable": "^3.8.7",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.25",
     "@types/react": "^17.0.2",
