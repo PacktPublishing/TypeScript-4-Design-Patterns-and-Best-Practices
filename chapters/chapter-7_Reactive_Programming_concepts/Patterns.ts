@@ -55,7 +55,7 @@ result.then((d) => {
   console.log(d);
 });
 
-// const source = [1, 3, 4];
+const source = [1, 3, 4];
 // const iter = new ListIterator(source);
 
 // function pollOnData(iterator: ListIterator<number>) {
