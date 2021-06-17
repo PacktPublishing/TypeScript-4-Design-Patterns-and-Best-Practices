@@ -1,4 +1,4 @@
-interface Subscriber {
+export interface Subscriber {
   notify(): void;
 }
 
