@@ -12,9 +12,10 @@ class WorkerCenter implements WorkerMediator {
   }
 
   public triggerEvent(sender: object, message: string): void {
-    if (message.startsWith("single_job_completed")) {
-      this.workerB.performWork();
-    }
+    // Triggers stack overflow error
+    // if (message.startsWith("single_job_completed")) {
+    //   this.workerB.performWork();
+    // }
 
     if (message.startsWith("batch_job_completed")) {
       this.workerB.performWork();

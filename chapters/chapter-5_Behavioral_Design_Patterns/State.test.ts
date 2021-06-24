@@ -13,7 +13,7 @@ test("Originator state is Passive by default", () => {
 
 test("Originator state can transition to a new state", () => {
   const origin = new Originator();
-  const newState = new ActiveState(origin);
+  const newState = new ActiveState();
   origin.changeState(newState);
   origin.reportState();
 
