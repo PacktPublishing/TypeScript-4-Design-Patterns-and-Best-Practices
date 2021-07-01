@@ -9,6 +9,7 @@
     "immutable": "^4.0.0-rc.12",
     "inversify": "^5.0.5",
     "inversify-express-utils": "^6.3.2",
+    "lodash": "^4.17.21",
     "monocle-ts": "^2.3.10",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.1",

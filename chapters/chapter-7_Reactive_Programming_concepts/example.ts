@@ -45,3 +45,9 @@
 
   console.log(ourNewNewPresent.open()); // Yum Yum!
 }
+
+type T0 = Extract<"a" | "b" | "c", "a" | "b" | "f">;
+
+type T1 = Extract<string | number | (() => void), Function>;
+
+type T1 = () => void;
