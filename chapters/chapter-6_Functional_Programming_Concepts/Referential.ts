@@ -1,10 +1,11 @@
 import { IO, log } from "./PureFunctions";
 import * as R from "ramda";
 
-function main(): IO<(a, b) => void> {
-  return R.compose(log, 15, getArgs)(11, 4);
+function main(): IO<void> {
+  return R.compose(log, sumList, getArgs)(11, 4);
 }
-function sumList(number: []): number {
+
+function sumList(number: number[]): number {
   return number.reduce((prev, curr) => prev + curr, 0);
 }
 

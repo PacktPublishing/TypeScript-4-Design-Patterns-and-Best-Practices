@@ -91,4 +91,3 @@ console.log(userName.isEmpty()); // false
 console.log((userName as Some<string>).get());
 const evens = (n: number): O.Option<number> =>
   n % 2 === 0 ? O.none : O.some(n);
-console.log(flow([1, 2, 3, 4, 5, 6]));
