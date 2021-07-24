@@ -43,8 +43,8 @@ function mapJsonResponse(json: any): UserResponse[] {
 
 function mapUser(user: any) {
   return {
-    id: item["id"] ?? null,
-    name: item["name"] ?? null,
-    username: item["username"] ?? null,
+    id: user["id"] ?? null,
+    name: user["name"] ?? null,
+    username: user["username"] ?? null,
   };
 }

@@ -130,6 +130,11 @@ import { kebabCase } from "lodash";
 }
 
 {
+  type User = {
+    id: string;
+    name: string;
+    email: string;
+  };
   interface UserService {
     findBy(id: string): User | undefined;
     create(specification: User): void;

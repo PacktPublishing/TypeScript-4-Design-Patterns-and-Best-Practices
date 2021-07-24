@@ -106,7 +106,9 @@ const applicationConfig = {
   },
   flags: {
     isEnabled: true,
-    isAvailable: getIsAvailable(),
+    isAvailable() {
+      return this.isEnabled;
+    },
   },
 };
 

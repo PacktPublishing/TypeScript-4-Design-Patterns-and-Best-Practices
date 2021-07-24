@@ -37,7 +37,7 @@ import Singleton from "chapters/chapter-3_Creational_Design_Patterns/singleton";
     parent: Component;
   };
 
-  class Composite extends Component {
+  class Composite {
     private children: Component[] = [];
 
     getIterator(): Iterator<Component> {
@@ -84,11 +84,11 @@ import Singleton from "chapters/chapter-3_Creational_Design_Patterns/singleton";
     restoreLastMemento();
     saveMemento();
   }
-  type Originator  {
-      save:() => Memento;
-      restore: (memento: Memento) => void;
-  }
-  type Memento = string
+  type Originator = {
+    save: () => Memento;
+    restore: (memento: Memento) => void;
+  };
+  type Memento = string;
   class CareTaker implements Receiver {
     constructor(
       private originator: Originator,

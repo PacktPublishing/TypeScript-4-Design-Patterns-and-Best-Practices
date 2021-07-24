@@ -23,4 +23,4 @@ export function assertNotZero<T extends number>(
   }
 }
 
-divMod(2, 0);
+// divMod(2, 0);
