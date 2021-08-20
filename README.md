@@ -1,8 +1,8 @@
 # TypeScript 4 Design Patterns and Best Practices
 
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=repository&utm_campaign=9781786461629"><img src="" alt="TypeScript 4 Design Patterns and Best Practices" height="256px" align="right"></a>
+<a href="https://www.amazon.com/dp/1800563426"><img src="https://images-na.ssl-images-amazon.com/images/I/51V2G9gMPAL._SX404_BO1,204,203,200_.jpg" alt="TypeScript 4 Design Patterns and Best Practices" height="256px" align="right"></a>
 
-This is the code repository for [TypeScript 4 Design Patterns and Best Practices](https://www.packtpub.com/?utm_source=github&utm_medium=repository&utm_campaign=9781786461629), published by Packt.
+This is the code repository for [TypeScript 4 Design Patterns and Best Practices](https://www.amazon.com/dp/1800563426), published by Packt.
 
 **Discover effective techniques and design patterns for every programming task**
 
