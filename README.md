@@ -1,46 +1,55 @@
-Typescript 4 Design Patterns and Best Practices
----
+# TypeScript 4 Design Patterns and Best Practices
 
-This is the code repository for Typescript 4 Design Patterns and Best Practices, published by Packt.
+<a href="https://www.packtpub.com/?utm_source=github&utm_medium=repository&utm_campaign=9781786461629"><img src="" alt="TypeScript 4 Design Patterns and Best Practices" height="256px" align="right"></a>
 
-**Advance your Typescript knowledge by learning pragmatic, instantly effective techniques and design patterns for every programming task**
+This is the code repository for [TypeScript 4 Design Patterns and Best Practices](https://www.packtpub.com/?utm_source=github&utm_medium=repository&utm_campaign=9781786461629), published by Packt.
+
+**Discover effective techniques and design patterns for every programming task**
 
 ## What is this book about?
-Most of the current Typescript Books in circulation are from Packt and they cover certain use cases. 
-We propose this book due to an increased demand for a more holistic content regarding Design Patterns in Typescript. 
-For example there were some complaints in TypeScript Design Patterns by Vilic Vane 2016, that not all design patterns 
-were covered in detail or explained in a pragmatic or clear way.
+TypeScript offers a rich type system that can be used to enhance the existing JavaScript code. This book will cover all the classical design patterns in TypeScript and their primary categories using practical examples and class diagrams for each of the design patterns.
 
-The unique points of this book is that it is mainly focused on the latest Typescript features which allow a more efficient application of the design patterns. The patterns will not just simply be explained in a vague or unrealistic example but they are demonstrated in real world use cases and under restrictions. After each pattern is described, we will offer some common sense reasons and best practices when using them in real world use cases.
+This book covers the following exciting features:
+* Understand the role of design patterns and their significance
+* Explore all significant design patterns within the context of TypeScript
+* Find out how design patterns differ from design concepts
+* Understand how to put the principles of design patterns into practice
+* Discover additional patterns that stem from functional and reactive programming
+* Recognize common gotchas and antipatterns when developing TypeScript applications and understand how to avoid them
 
-If you feel this book is for you, get your copy today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800563426) today!
 
-https://www.packtpub.com/
+<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
+alt="https://www.packtpub.com/" border="5" /></a>
 
-### Instructions and Navigations
-Code explained in the book is organized into chapters. For example, *chapter-1_Getting_Started_With_Typescript_4*.
+## Instructions and Navigations
+All of the code is organized into folders. For example, Chapter02.
 
-We designed this book for readers with basic TypeScript or Javascript experience but no prior knowledge of Design Patterns
-Some familiarity with web development is a recommended to understanding the concepts in the book easily.
+The code will look like the following:
+```
+export class EventCreator implements EventSender {
+  sendEvent(action: string): void {
+    console.log("Event Created: ", action);
+  }
+}
+```
+
+**Following is what you need for this book:**
+If you're a developer looking to learn how to apply established design patterns to solve common programming problems instead of reinventing solutions, you'll find this book useful. You're not expected to have prior knowledge of design patterns. Basic TypeScript knowledge is all you need to get started with this book.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-9).
-
-### Software and Hardware List used
-| Chapter | Software used | OS required |
+### Software and Hardware List
+| Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
-| 1-9 | Visual Studio Code 1.49, Node.js 12.18.3, TypeScript 4.1 | Windows, Linux, and OSX |
+| 1 - 9 | Visual Studio Code 1.49, Node.js 12.18.3, TypeScript 4.1 | Windows, Mac OS X, and Linux (Any) |
+
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781800563421_ColorImages.pdf).
 
 ### Related products
-* TypeScript Design Patterns [[Packt]](https://www.packtpub.com/product/typescript-design-patterns/9781785280832 ) [[Amazon]](https://www.amazon.com/TypeScript-Design-Patterns-Vilic-Vane-ebook/dp/B01BSTEDI6)
+* Mastering TypeScript 3 - Third Edition [[Packt]](https://www.packtpub.com/product/mastering-typescript-3-third-edition/9781789536706?utm_source=github&utm_medium=repository&utm_campaign=9781789536706) [[Amazon]](https://www.amazon.com/dp/1789536707)
 
-* Design Patterns in TypeScript (Video) [[Packt]](https://www.packtpub.com/product/design-patterns-in-typescript-video/9781789347951)
-
-* Mastering Typescript [[Packt]](https://www.packtpub.com/product/mastering-typescript-3-third-edition/9781789536706 )
+* Advanced TypeScript 3 Programming Projects [[Packt]](https://www.packtpub.com/product/advanced-typescript-3-programming-projects/9781789133042?utm_source=github&utm_medium=repository&utm_campaign=9781789133042) [[Amazon]](https://www.amazon.com/dp/1789133041)
 
 ## Get to Know the Author
-**Theo Despoudis** lives in Limerick, Ireland, where he works as a Software Engineer for WP Engine and as a part-time tech practitioner for fixate.io. He is the co-author of The React Workshop and Advanced Go Programming in 7 Days, Dzone Core Member, and maintains some open source projects on GitHub. Theo is available for conference talks, independent consulting, and corporate training services opportunities.
-
-## Other books by the authors
-[The React Workshop](https://www.packtpub.com/product/the-react-workshop/9781838645564 )
-
-[Advanced Go Programming in 7 Days](https://www.packtpub.com/product/advanced-go-programming-in-7-days-video/9781788994880 )
+**Theo Despoudis**
+lives in Ireland, where he works as a Software Engineer for WP Engine and as a part-time tech practitioner for Fixate. He is the co-author of The React Workshop and Advanced Go Programming in 7 Days, Dzone Core Member, and maintains some open source projects on GitHub. Theo is available for conference talks, independent consulting, and corporate training services opportunities.
