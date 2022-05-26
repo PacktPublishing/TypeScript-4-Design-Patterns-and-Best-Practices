@@ -1,3 +1,7 @@
+## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B16753?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
+-----
+For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
+
 # TypeScript 4 Design Patterns and Best Practices
 
 <a href="https://www.packtpub.com/product/typescript-4-design-patterns-and-best-practices/9781800563421"><img src="https://static.packt-cdn.com/products/9781800563421/cover/smaller" height="256px" align="right"></a>
