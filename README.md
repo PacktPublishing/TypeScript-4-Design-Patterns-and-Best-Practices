@@ -53,3 +53,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Author
 **Theo Despoudis**
 lives in Ireland, where he works as a Software Engineer for WP Engine and as a part-time tech practitioner for Fixate. He is the co-author of The React Workshop and Advanced Go Programming in 7 Days, Dzone Core Member, and maintains some open source projects on GitHub. Theo is available for conference talks, independent consulting, and corporate training services opportunities.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800563421">https://packt.link/free-ebook/9781800563421 </a> </p>
