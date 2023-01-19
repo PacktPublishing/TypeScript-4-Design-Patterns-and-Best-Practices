@@ -43,7 +43,7 @@ class TodoItem {
 
 const item = new TodoItem({ description: "Some description" });
 console.debug(item.description); // prints "Some description"
-console.debug(item.title); // prints "Some description"
+console.debug(item.title); // prints "Default item title"
 
 type OriginalTodoItemProps = Required<Partial<TodoItemProps>>; // type is same as TodoItemProps
 
